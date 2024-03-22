@@ -150,7 +150,7 @@ class TissueSpecificity:
             The resolution in dots per inch.
         """
 
-        with plt.style.context('seaborn-whitegrid'):
+        with plt.style.context('seaborn-v0_8-whitegrid'):
             if self._method in ['tsi', 'zscore', 'spm', 'js_specificity']:
                 data = self.tissue_specificity.max(axis=1).values
             else:
